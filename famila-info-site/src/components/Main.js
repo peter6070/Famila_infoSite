@@ -17,8 +17,8 @@ const MainStyled = styled.div`
     position: absolute;
     width: 371px;
     height: 234px;
-    margin-top: 150px;
-    margin-left: 150px;
+    top: 200px;
+    left: 150px;
     > h1,
     h4 {
       margin: 10px auto;
@@ -37,8 +37,8 @@ const MainStyled = styled.div`
   .download-store {
     position: absolute;
     display: flex;
-    margin-left: 150px;
-    margin-top: 400px;
+    top: 450px;
+    left: 150px;
     > img {
       margin-top: 60px;
       margin-right: 30px;
