@@ -5,6 +5,7 @@ const Section1Styled = styled.div`
   width: 100%;
   height: 100vh;
   background-color: white;
+  padding-bottom: 450px;
   .Section1 {
     display: flex;
     justify-content: space-around;
@@ -79,6 +80,7 @@ const Section1Styled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
     .interview-background-img {
       position: absolute;
       //잘랐을 때 보여주고 싶은 위치
@@ -90,6 +92,7 @@ const Section1Styled = styled.div`
     }
     .play-button {
       position: absolute;
+      cursor: pointer;
       z-index: 1;
     }
     .famila-interview {
@@ -180,17 +183,20 @@ const Section1 = () => {
           </tr>
         </table>
       </div>
+      {/* 인터뷰 영상 표시 부분 */}
       <div className="interview-movie-div">
         <img
           className="interview-background-img"
           src="img/interview-background-img.jpg"
           alt="interview-background-img.jpg"
         />
+        {/* 영상 재생 버튼(div)*/}
         <img
           className="play-button"
           src="img/play-button.png"
           alt="play-button.png"
         />
+        {/* 000님 인터뷰 텍스트 표시 */}
         <div className="famila-interview">
           <p className="famila-user-text">패밀라 회원</p>
           <p>김영숙님 인터뷰</p>

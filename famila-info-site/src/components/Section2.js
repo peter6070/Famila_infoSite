@@ -5,17 +5,21 @@ const Section2Styled = styled.div`
   width: 100%;
   height: 100vh;
   background-color: white;
-  padding-top: 500px;
+  padding-bottom: 1000px;
+
   .Section2 {
-    // position: relative;
+    position: relative;
     > div {
+      width: 100%;
       display: flex;
+      align-items: center;
     }
   }
   .groupActivity-div {
+    justify-content: right;
   }
   .text {
-    width: 363px;
+    width: 350px;
     h1 {
       color: #ec616f;
     }
@@ -29,7 +33,20 @@ const Section2Styled = styled.div`
       background-color: #ec616f;
       border-radius: 50px;
       padding: 15px 10px;
+      cursor: pointer;
+      font-size: 18px;
     }
+  }
+  .lifeSupporter-mobile-img {
+    padding-left: 200px;
+    padding-right: 50px;
+  }
+  .groupActivity-mobile-img {
+    padding-right: 200px;
+    padding-left: 50px;
+  }
+  .supporterRegistration-mobile-img {
+    padding-left: 100px;
   }
 `;
 
@@ -37,16 +54,14 @@ const Section2 = () => {
   return (
     <Section2Styled>
       <div className="Section2">
+        {/* 생활도우미 모바일 화면 및 설명 */}
         <div className="lifeSupporter-div">
           <img
             src="img/lifeSupporter-mobile-img.png"
             alt="lifeSupporter-mobile-img"
+            className="lifeSupporter-mobile-img"
           />
           <div className="text">
-            <img
-              src="img/groupActivity-mobile-img.png"
-              alt="groupActivity-mobile-img"
-            />
             <h1>생활도우미 1:1매칭</h1>
             <p>
               패밀라 회원이 되시면 1:1로 도우미 메이트가 매칭되어 집수리, 짐
@@ -56,6 +71,7 @@ const Section2 = () => {
             <div className="more-info-button">생활도움 더 알아보기</div>
           </div>
         </div>
+        {/* 모임활동 모바일 화면 및 설명 */}
         <div className="groupActivity-div">
           <div className="text">
             <h1>취미 기반 모임활동</h1>
@@ -65,11 +81,18 @@ const Section2 = () => {
             </p>
             <div className="more-info-button">모임 더 알아보기</div>
           </div>
+          <img
+            src="img/groupActivity-mobile-img.png"
+            alt="groupActivity-mobile-img"
+            className="groupActivity-mobile-img"
+          />
         </div>
+        {/* 직원등록 모바일 화면 및 설명 */}
         <div className="supporterRegistration-div">
           <img
             src="img/supporter-mobile-img.png"
             alt="supporterRegistration-mobile-img"
+            className="supporterRegistration-mobile-img"
           />
           <div className="text">
             <h1>패밀라 직원등록</h1>

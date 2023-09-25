@@ -4,9 +4,9 @@ import styled from "styled-components";
 const MainStyled = styled.div`
   width: 100%;
   height: 101vh;
+  background-color: #f7f8f9;
   .Main {
     padding-top: 95px;
-    background-color: #f7f8f9;
     color: #ec616f;
   }
   .background-heart {
