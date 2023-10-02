@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Famila_infoSite/static/css/main.6267d548.css",
-    "main.js": "/Famila_infoSite/static/js/main.35b4093d.js",
+    "main.js": "/Famila_infoSite/static/js/main.5658109d.js",
     "index.html": "/Famila_infoSite/index.html",
     "main.6267d548.css.map": "/Famila_infoSite/static/css/main.6267d548.css.map",
-    "main.35b4093d.js.map": "/Famila_infoSite/static/js/main.35b4093d.js.map"
+    "main.5658109d.js.map": "/Famila_infoSite/static/js/main.5658109d.js.map"
   },
   "entrypoints": [
     "static/css/main.6267d548.css",
-    "static/js/main.35b4093d.js"
+    "static/js/main.5658109d.js"
   ]
 }
