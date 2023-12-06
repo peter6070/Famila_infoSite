@@ -39,7 +39,7 @@ const Menubar = styled.div`
   @media only screen and (max-width: 750px) {
     position: fixed;
     left: 50%;
-    top: 12%;
+    top: 70px;
     transform: translateX(-50%);
     width: ${(props) => (props.isToggled ? '100%' : '0')};
     height: ${(props) => (props.isToggled ? '100%' : '0')};
