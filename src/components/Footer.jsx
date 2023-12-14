@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 const FooterStyled = styled.div`
   width: 100%;
@@ -50,9 +51,6 @@ const CompanyInfo = styled.div`
     margin-right: 0;
   }
 `;
-const LineSpace = styled.div`
-  height: 10px;
-`;
 
 const FooterMenu = styled.div`
   min-width: 40%;
@@ -82,6 +80,17 @@ const OtherLink = styled.div`
   }
   @media only screen and (max-width: 550px) {
     justify-content: flex-start;
+  }
+`;
+const FooterLink = styled(Link)`
+  color: black;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: black;
+  }
+  &:active {
+    color: black;
   }
 `;
 
@@ -117,17 +126,17 @@ const Footer = () => {
           </CompanyInfo>
           <FooterMenu>
             <MenuTitle>메뉴</MenuTitle>
-            <h3>생활도움 서비스</h3>
-            <h3>모임찾기</h3>
-            <h3>도우미 등록</h3>
-            <h3>제휴문의</h3>
+            <FooterLink to="/"><h3>생활도움 서비스</h3></FooterLink>
+            <FooterLink to="/"><h3>모임찾기</h3></FooterLink>
+            <FooterLink to="/"><h3>도우미 등록</h3></FooterLink>
+            <FooterLink to="/"><h3>제휴문의</h3></FooterLink>
           </FooterMenu>
         </CompanyInfoMenu>
         {/* 외부 링크 */}
         <OtherLink>
-          <p>네이버블로그</p>
-          <p>네이버카페</p>
-          <p>인스타그램</p>
+          <FooterLink to="/"><p>네이버블로그</p></FooterLink>
+          <FooterLink to="/"><p>네이버카페</p></FooterLink>
+          <FooterLink to="/"><p>인스타그램</p></FooterLink>
         </OtherLink>
       </FooterBody>
     </FooterStyled>
