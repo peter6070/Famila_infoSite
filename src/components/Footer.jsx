@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const FooterStyled = styled.div`
   width: 100%;
@@ -68,29 +68,31 @@ const MenuTitle = styled.p`
 `;
 const OtherLink = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
-  p {
-    max-width: 200px;
-    width: 30%;
-    margin: 10px;
-    color: #999;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  @media only screen and (max-width: 550px) {
-    justify-content: flex-start;
+  a {
+    font-size: 16px;
+    margin: 1%;
+    color: black;
+    &:hover,
+    &:focus {
+      color: black;
+    }
+    &:active {
+      color: black;
+    }
   }
 `;
 const FooterLink = styled(Link)`
-  color: black;
+  color: #999;
   text-decoration: none;
+  cursor: pointer;
   &:hover,
   &:focus {
-    color: black;
+    color: #999;
   }
   &:active {
-    color: black;
+    color: #999;
   }
 `;
 
@@ -126,17 +128,25 @@ const Footer = () => {
           </CompanyInfo>
           <FooterMenu>
             <MenuTitle>메뉴</MenuTitle>
-            <FooterLink to="/"><h3>생활도움 서비스</h3></FooterLink>
-            <FooterLink to="/"><h3>모임찾기</h3></FooterLink>
-            <FooterLink to="/"><h3>도우미 등록</h3></FooterLink>
-            <FooterLink to="/"><h3>제휴문의</h3></FooterLink>
+            <FooterLink to="/">
+              <h3>생활도움 서비스</h3>
+            </FooterLink>
+            <FooterLink to="/">
+              <h3>모임찾기</h3>
+            </FooterLink>
+            <FooterLink to="/">
+              <h3>도우미 등록</h3>
+            </FooterLink>
+            <FooterLink to="/">
+              <h3>제휴문의</h3>
+            </FooterLink>
           </FooterMenu>
         </CompanyInfoMenu>
         {/* 외부 링크 */}
         <OtherLink>
-          <FooterLink to="/"><p>네이버블로그</p></FooterLink>
-          <FooterLink to="/"><p>네이버카페</p></FooterLink>
-          <FooterLink to="/"><p>인스타그램</p></FooterLink>
+          <FooterLink to="/">네이버 블로그</FooterLink>
+          <FooterLink to="/">네이버 카페</FooterLink>
+          <FooterLink to="/">인스타그램</FooterLink>
         </OtherLink>
       </FooterBody>
     </FooterStyled>
